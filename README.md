@@ -19,22 +19,16 @@ A complete CS2 case opening bot for Streamer.bot with inventory, economy, jackpo
 
 ---
 
-## 🚀 Quick Install (2 Minutes)
-
-### One-Click Import (Easiest)
+## 🚀 Quick Install
 
 1. Download [`CS2-Case-Bot-V1.4-Actions.sb`](CS2-Case-Bot-V1.4-Actions.sb)
 2. In Streamer.bot → **Actions** → Right-click → **Import** → Select the file
-3. Download [`CS2-Case-Bot-V1.4-Globals.json`](CS2-Case-Bot-V1.4-Globals.json)
-4. In Streamer.bot → **Services** → **Global Variables** → **Persisted Globals** → **Import** → Select the file
-5. Set `!jackpotdraw` and admin commands (`!givebalance`, `!resetuser`, etc.) to **Moderator** permission
+3. Open [`4-persisted-globals.txt`](4-persisted-globals.txt) and copy each line
+4. In Streamer.bot → **Services** → **Global Variables** → **Persisted Globals** → Add each line as a new variable
+5. Set `!jackpotdraw` and admin commands to **Moderator** permission
 6. Type `!help` in your chat to test!
 
-**That's it! All actions, triggers, and skin lists are ready to go!**
-
-### Manual Setup (For Learning or Modifying)
-
-Follow the [`setup-guide.md`](setup-guide.md) and use the code in [`V1.4-Complete-Code-Reference.md`](V1.4-Complete-Code-Reference.md)
+**That's it! Actions import automatically. Globals take ~5 minutes to add manually.**
 
 ---
 
