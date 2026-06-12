@@ -19,6 +19,25 @@ A complete CS2 case opening bot for Streamer.bot with inventory, economy, jackpo
 
 ---
 
+## 🚀 Quick Install (2 Minutes)
+
+### One-Click Import (Easiest)
+
+1. Download [`CS2-Case-Bot-V1.4-Actions.sb`](CS2-Case-Bot-V1.4-Actions.sb)
+2. In Streamer.bot → **Actions** → Right-click → **Import** → Select the file
+3. Download [`CS2-Case-Bot-V1.4-Globals.json`](CS2-Case-Bot-V1.4-Globals.json)
+4. In Streamer.bot → **Services** → **Global Variables** → **Persisted Globals** → **Import** → Select the file
+5. Set `!jackpotdraw` and admin commands (`!givebalance`, `!resetuser`, etc.) to **Moderator** permission
+6. Type `!help` in your chat to test!
+
+**That's it! All actions, triggers, and skin lists are ready to go!**
+
+### Manual Setup (For Learning or Modifying)
+
+Follow the [`setup-guide.md`](setup-guide.md) and use the code in [`V1.4-Complete-Code-Reference.md`](V1.4-Complete-Code-Reference.md)
+
+---
+
 ## ✨ Features
 
 | Feature | Description |
@@ -133,46 +152,18 @@ A complete CS2 case opening bot for Streamer.bot with inventory, economy, jackpo
 
 ---
 
-## 🚀 Quick Setup
-
-### Prerequisites
-- [Streamer.bot](https://streamer.bot) v1.0.4 or higher
-- Twitch, YouTube, or Trovo account
-
-### Step 1: Import Persisted Globals
-1. Open Streamer.bot → **Services** → **Global Variables** → **Persisted Globals**
-2. Copy all skin lists from [`persisted-globals.txt`](persisted-globals.txt)
-3. Add each as a new persisted global variable
-
-### Step 2: Create Actions
-1. Create a new Action for each command
-2. Paste the corresponding C# code from [`V1.4-Complete-Code-Reference.md`](V1.4-Complete-Code-Reference.md)
-3. Set the trigger command
-
-### Step 3: Link Sub-Actions
-- For `!case` command: Add Sub-Action → **Run Action** → `CS2_OpenCase`
-
-### Step 4: Set Mod Permissions
-- Set `!jackpotdraw` permission to **Mods Only**
-- Set all admin commands to **Moderator** or **Broadcaster**
-
-### Step 5: Test
-- Type `!help` in your chat to see all commands
-- Type `!setcase Dreams` then `!case` to open your first case
-
-For detailed setup instructions, see [`setup-guide.md`](setup-guide.md)
-
----
-
 ## 📁 Files Included
 
 | File | Description |
 |------|-------------|
 | `CS2 Case Bot Logo.png` | Repository logo |
-| `V1.4-Complete-Code-Reference.md` | All action C# code |
-| `persisted-globals.txt` | Skin lists for copy/paste |
-| `setup-guide.md` | Step-by-step installation |
-| `LICENSE` | MIT License + IP Disclaimer |
+| `1-README.md` | Main documentation |
+| `2-LICENSE` | MIT License + IP Disclaimer |
+| `3-setup-guide.md` | Step-by-step installation |
+| `4-persisted-globals.txt` | Skin lists for copy/paste |
+| `5-V1.4-Complete-Code-Reference.md` | All action C# code |
+| `CS2-Case-Bot-V1.4-Actions.sb` | One-click action import |
+| `CS2-Case-Bot-V1.4-Globals.json` | One-click globals import |
 
 ---
 
