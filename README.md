@@ -27,7 +27,7 @@ A complete CS2 case opening bot for Streamer.bot with inventory, economy, jackpo
 
 1. Download [`CS2-Case-Bot-V1.4-Actions.sb`](CS2-Case-Bot-V1.4-Actions.sb)
 2. In Streamer.bot → **Actions** → Right-click → **Import** → Select the file
-3. Open [`4-persisted-globals.txt`](4-persisted-globals.txt) and copy each line
+3. Open [`persisted-globals.txt`](persisted-globals.txt) and copy each line
 4. In Streamer.bot → **Services** → **Global Variables** → **Persisted Globals** → Add each line as a new variable
 5. Set `!jackpotdraw` and admin commands to **Moderator** permission
 6. Type `!help` in your chat to test!
@@ -36,7 +36,7 @@ A complete CS2 case opening bot for Streamer.bot with inventory, economy, jackpo
 
 ### Manual Setup (For Learning or Modifying)
 
-Follow [`3-setup-guide.md`](3-setup-guide.md) and use the code in [`5-V1.4-Complete-Code-Reference.md`](5-V1.4-Complete-Code-Reference.md)
+Follow [`setup-guide.md`](setup-guide.md) and use the code in [`V1.4-Complete-Code-Reference.md`](V1.4-Complete-Code-Reference.md)
 
 ---
 
@@ -159,11 +159,11 @@ Follow [`3-setup-guide.md`](3-setup-guide.md) and use the code in [`5-V1.4-Compl
 | File | Description |
 |------|-------------|
 | `CS2 Case Bot Logo.png` | Repository logo |
-| `1-README.md` | Main documentation |
-| `2-LICENSE` | MIT License + IP Disclaimer |
-| `3-setup-guide.md` | Step-by-step installation |
-| `4-persisted-globals.txt` | Skin lists for copy/paste |
-| `5-V1.4-Complete-Code-Reference.md` | All action C# code |
+| `README.md` | Main documentation |
+| `LICENSE` | MIT License + IP Disclaimer |
+| `setup-guide.md` | Step-by-step installation |
+| `persisted-globals.txt` | Skin lists for copy/paste |
+| `V1.4-Complete-Code-Reference.md` | All action C# code |
 | `CS2-Case-Bot-V1.4-Actions.sb` | One-click action import |
 
 ---
